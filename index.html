@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Plugtent</title>
+        <style>
+            @import url("https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+            body {
+                margin: 0;
+            }
+            table {
+                border-spacing: 0;
+            }
+            td {
+                padding: 0;
+            }
+            img {
+                border: 0;
+            }
+            .wrapper {
+                width: 100%;
+                table-layout: fixed;
+                background-color: #cef6ff;
+                padding: 30px 0;
+            }
+            .main {
+                width: 100%;
+                max-width: 580px;
+                background-color: #fff;
+                font-family: "Inter", sans-serif;
+                color: #1d1d1b;
+            }
+            .header {
+                background-color: #fff;
+                padding: 32px;
+                text-align: center;
+                color: #fff;
+            }
+            .logo-container {
+                text-align: center;
+            }
+            .logo-container img {
+                width: 100px;
+            }
+            .title {
+                color: white;
+                margin: 0;
+            }
+            .tagline {
+                font-size: 14px;
+                color: #fff;
+                line-height: 20px;
+                font-family: Inter, sans-serif;
+                margin: 0;
+            }
+            .content {
+                padding: 32px;
+            }
+            .content h2 {
+                color: #1d1d1b;
+                margin: 0 0 16px;
+                font-size: 24px;
+            }
+            .content p {
+                font-size: 16px;
+                padding: 0 0 16px;
+                line-height: 24px;
+                font-family: Inter, sans-serif;
+                margin: 0;
+            }
+            .button {
+                font-size: 16px;
+                background-color: #1d1d1b;
+                padding: 12px 20px;
+                text-decoration: none;
+                color: white;
+                border-radius: 5px;
+                font-family: Inter, sans-serif;
+                display: inline-block;
+                width: calc(100% - 40px);
+                text-align: center;
+            }
+            .footer-btn {
+                background-color: #1692f4;
+                padding: 12px 20px;
+                text-decoration: none;
+                color: white;
+                border-radius: 5px;
+                font-family: Inter, sans-serif;
+                display: inline-block;
+                font-size: 14px;
+            }
+            .footer {
+                background-color: #fff;
+                padding: 32px;
+                text-align: center;
+                color: #1d1d1b;
+            }
+            .footer p {
+                line-height: 20px;
+                font-size: 14px;
+                font-family: Inter, sans-serif;
+                margin: 0;
+                color: #6d6d6d;
+            }
+            .social-links {
+                margin: 0;
+                margin-top: 20px;
+                padding: 0;
+            }
+            .social-links a {
+                margin-right: 10px;
+                text-decoration: none;
+            }
+            .social-links img {
+                width: 24px;
+            }
+            .social-links a:last-child {
+                margin-right: 0;
+            }
+            .social-links a:hover {
+                opacity: 0.8;
+            }
+            @media screen and (max-width: 600px) {
+                .main {
+                    width: 100%;
+                }
+                .wrapper {
+                    padding: 0;
+                }
+                .header {
+                    padding: 20px;
+                }
+                .content {
+                    padding: 20px;
+                }
+                .footer {
+                    padding: 20px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <center>
+            <div class="wrapper">
+                <table class="main" width="100%">
+                    <tr>
+                        <td class="header">
+                            <table width="100%">
+                                <tr>
+                                    <td align="center" class="logo-container">
+                                        <img src="./images/logo.svg" alt="Logo" />
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="content">
+                            <h2>Welcome to Tride</h2>
+                            <p>
+                                Hello {name}, <br /><br />
+                                Welcome to Tride, we are on a mission to make financial management for non profit organizations much better, thank you for coming on this journey with us. <br /><br />
+                                Let’s verify your account first to get started.
+                            </p>
+                            <a href="{{link}}" class="button">Verify Account</a>
+                            <br /><br />
+                            <p>
+                                Love, <br />
+                                The Tride Team.
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="footer">
+                            <table width="100%">
+                                <tr>
+                                    <td>
+                                        <p>Copyright &copy; <span id="year"></span> GoTrideTech Limited Limited. All rights reserved.</p>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td align="center">
+                                        <table class="social-links">
+                                            <tr>
+                                                <td>
+                                                    <a href="https://twitter.com/gotridetech" target="_blank">
+                                                        <img src="./images/twitter.svg" alt="Twitter" />
+                                                    </a>
+                                                </td>
+                                                <td>
+                                                    <a href="https://www.linkedin.com/company/gotridetech" target="_blank">
+                                                        <img src="./images/linkedin.svg" alt="LinkedIn" />
+                                                    </a>
+                                                </td>
+                                                <td>
+                                                    <a href="https://www.instagram.com/gotridetech/" target="_blank">
+                                                        <img src="./images/instagram.svg" alt="Instagram" />
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </center>
+    </body>
+
+    <script>
+        document.getElementById("year").innerHTML = new Date().getFullYear();
+    </script>
+</html>
